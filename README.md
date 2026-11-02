@@ -18,7 +18,6 @@ https://kudabii.github.io/Portfolio-website/
 
 - HTML5
 - CSS3 (Flexbox, media queries)
-- JavaScript
 - Font Awesome icons
 
 ## Features
