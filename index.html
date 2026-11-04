@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Khalid's Portfolio</title>
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital@1&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -20,11 +21,14 @@
 
   <main>
     <section class="hero-section">
-        <p class="hero-greeting">Hi, I'm Khalid</p>
+      <div class="hero-content">
+        <p class="hero-greeting">Hi, I'm <span class="hero-name">Khalid</span></p>
         <h1 class="hero-subtitle"> Front-End Developer </h1>
-        <p>I Build Websites That Grow Your Business</p>
-        <a href="#projects" class="hero-btn"> View my work</a>
+        <p class="hero-tag">Your website should work as hard as you do.</p>
+        <a href="#projects" class="hero-btn1"> View my work</a>
         <a href="resume.pdf" class="hero-btn"> Download Resume</a>
+      </div>
+
 
         <div class="social-buttons">
           <a href="https://linkedin.com/in/khalid-okorejior-1b9293233" target="_blank"> 
@@ -54,7 +58,7 @@
             <li class="skill-item">React</li>
           </ul>
         </div>
-    </section>
+      </section>
 
 
     <section class="projects-section" id="projects">
@@ -62,10 +66,11 @@
 
       <div class="projects-grid">
         <article class="project-card">
-          <span class="project-icon">▶</span>
           <h3 class="project-title">YouTube Landing Page</h3>
           <p class="project-desc">
-            A responsive recreation of the YouTube homepage, built with reusable React components for the header, sidebar, and video cards.      </p>
+            A responsive recreation of the YouTube homepage, built with reusable React components for the header, sidebar, and video cards.
+          </p>
+          <img class="project-img" src="previews/youtube-landing.jpg" alt="YouTube Landing Page">
           <p class="project-tools">HTML · CSS </p>
           <a href="https://kudabii.github.io/YouTubelandingpage/clone/" class="project-link">Live Demo</a>
           <a href="https://github.com/kudabii/YouTubelandingpage" class="project-link">GitHub</a>
@@ -74,11 +79,11 @@
 
       <div class="projects-grid">
         <article class="project-card">
-          <span class="project-icon">▶</span>
           <h3 class="project-title">To-Do List</h3>
           <p class="project-desc">
             A task manager where you can add, complete, and delete tasks. Built with React to practice components, state, and handling user input.
           </p>
+          <img class="project-img" src="previews/to-do-list.jpg" alt="To-Do List">
           <p class="project-tools">React · CSS</p>
           <a href="https://kudabii.github.io/To-do-list" class="project-link">Live Demo</a>
           <a href="https://github.com/kudabii/To-do-list" class="project-link">GitHub</a> 
@@ -88,9 +93,9 @@
 
       <div class="projects-grid">
         <article class="project-card">
-          <span class="project-icon">▶</span>
           <h3 class="project-title">Simple Calculator</h3>
           <p class="project-desc">A browser calculator for basic arithmetic.</p>
+          <img class="project-img" src="previews/simple-calculator.jpg" alt="Simple Calculator">
           <p class="project-tools">HTML · CSS · JavaScript</p>
           <a href="https://kudabii.github.io/Simple-calculator" class="project-link">Live Demo</a>
           <a href="https://github.com/kudabii/Simple-calculator" class="project-link">GitHub</a>
@@ -98,18 +103,16 @@
       </div>
     </section>
 
-    <section class="contact-section">
-      <p class="contact-text">Let's build something together</p>
+    <div class="contact-section">
+      <h2 class="contact-title">Let's build something together</h2>
       <p class="contact-text">Feel free to reach out for collaborations or just chat</p>
       <a href="https://wa.me/2349055045008?text=Hi%20Khalid%2C%20I%20saw%20your%20portfolio" class="contact-btn" target="_blank" id="contact">Get in touch</a>
-    </section>
+    </div>
   </main>
 
-  <footer>
-    <span id="footer-year"></span> [Khalid], Built from scratch
-    <script>
-      document.getElementById('footer-year').textContent = new Date().getFullYear();
-    </script>
+  <footer class="footer">
+    <span id="footer-year"></span> Copyright: © 2026 Khalid. All rights reserved.
+
   </footer>
 </body>
 </html>
